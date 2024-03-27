@@ -19,16 +19,22 @@ const NavBar = () => {
       justifyContent={"center"}
       sx={{ width: 1, height: 60, backgroundColor: "#fff" }}
     >
-      <Container maxWidth="lg" sx={{ padding: { lg: "0px !important" } }}>
+      <Container 
+        maxWidth="lg" 
+        sx={{ padding: { lg: "0px !important" } }}
+      >
         <Stack
-          direction={"row"}
-          alignItems={"center"}
-          justifyContent={"space-between"}
+          direction="row"
+          alignItems="center"
+          justifyContent="space-between"
         >
-          <img src={logo} alt="logo" />
+          <img 
+            src={logo} 
+            alt="logo" 
+          />
           <Stack
-            direction={"row"}
-            alignItems={"center"}
+            direction="row"
+            alignItems="center"
             spacing={4}
             sx={{ display: { md: "flex", xs: "none" } }}
           >
@@ -49,8 +55,8 @@ const NavBar = () => {
             ))}
           </Stack>
           <Stack
-            direction={"row"}
-            alignItems={"center"}
+            direction="row"
+            alignItems="center"
             spacing={2}
             sx={{ display: { md: "flex", xs: "none" } }}
           >
