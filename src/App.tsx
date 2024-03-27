@@ -1,3 +1,5 @@
+import NavBar from "./components/navbar/NavBar.tsx"
+import Header from "./header/Header.tsx"
 
 
 function App() {
@@ -5,7 +7,8 @@ function App() {
 
   return (
     <>
-      
+      <NavBar />
+      <Header/>
     </>
   )
 }
