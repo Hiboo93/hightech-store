@@ -4,6 +4,7 @@ import Features from "./components/features/Features.tsx";
 import LatestPosts from "./components/latestPosts/LatestPosts.tsx";
 import NavBar from "./components/navbar/NavBar.tsx";
 import ProductSlider from "./components/productSlider/ProductSlider.tsx";
+import Subscribe from "./components/subscribe/Subscribe.tsx";
 import { BlogPosts, comments, iphones, smartWatches } from "./data/index.ts";
 import Header from "./header/Header.tsx";
 
@@ -15,9 +16,10 @@ function App() {
       <Features />
       <ProductSlider title="mobile & tablets" data={iphones} delay={7000} />
       <ProductSlider title="smart watches" data={smartWatches} delay={5000} />
-      <Banner/>
-      <LatestPosts title="latest posts" posts={BlogPosts}/>
-      <CommentsSlider delay={5000} comments={comments}/>
+      <Banner />
+      <LatestPosts title="latest posts" posts={BlogPosts} />
+      <CommentsSlider delay={5000} comments={comments} />
+      <Subscribe />
     </>
   );
 }
