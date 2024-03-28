@@ -23,9 +23,9 @@ const ProductSlider = ({ title, data, delay }: Props) => {
       maxWidth="lg"
       sx={{ padding: { lg: "0px !important" }, margin: "100px auto 50px auto" }}
     >
-      <Stack 
-        direction="column" 
-        spacing={3} 
+      <Stack
+        direction="column"
+        spacing={3}
         sx={{ width: 1 }}
       >
         <Stack
@@ -37,13 +37,13 @@ const ProductSlider = ({ title, data, delay }: Props) => {
           <Typography sx={{ textTransform: "uppercase", fontSize: 17, fontWeight: 400 }}>
             {title}
           </Typography>
-          <Stack 
-            direction="column" 
-            spacing={0} 
+          <Stack
+            direction="column"
+            spacing={0}
             sx={{ cursor: "pointer"}}
           >
-              <Typography 
-                color="secondary.main" 
+              <Typography
+                color="secondary.main"
                 sx={{ fontSize: 13.5, fontWeight: 400, textTransform: "uppercase"}}
               >
                 view all products
@@ -51,9 +51,9 @@ const ProductSlider = ({ title, data, delay }: Props) => {
              <Box sx={{ width: 1, height: 1, backgroundColor: "E1E1E1" }}/>
             </Stack>
         </Stack>
-        <Swiper 
-          spaceBetween={20} 
-          slidesPerView={1} 
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1}
           style={{ width: "100%"}}
           autoplay={{ delay: delay, disableOnInteraction: false }}
           breakpoints={{
@@ -64,19 +64,19 @@ const ProductSlider = ({ title, data, delay }: Props) => {
           }}>
             {data.map((item: DataT, index: number) => (
               <SwiperSlide key={index}>
-                <Stack 
-                  direction="column" 
-                  spacing={1} 
+                <Stack
+                  direction="column"
+                  spacing={1}
                   sx={{ cursor: "pointer" }}
                 >
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
+                  <img
+                    src={item.image}
+                    alt={item.title}
                     style={{ width: "100%"}}
                   />
-                  <Stack 
-                    direction="row" 
-                    alignItems="center" 
+                  <Stack
+                    direction="row"
+                    alignItems="center"
                     justifyContent="space-between"
                   >
                       <Typography
