@@ -1,3 +1,4 @@
+import Banner from "./components/banner/Banner.tsx";
 import Features from "./components/features/Features.tsx";
 import NavBar from "./components/navbar/NavBar.tsx";
 import ProductSlider from "./components/productSlider/ProductSlider.tsx";
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <ProductSlider title="mobile & tablets" data={iphones} delay={7000} />
       <ProductSlider title="smart watches" data={smartWatches} delay={5000} />
+      <Banner/>
     </>
   );
 }
