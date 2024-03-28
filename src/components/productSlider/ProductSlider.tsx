@@ -48,7 +48,7 @@ const ProductSlider = ({ title, data, delay }: Props) => {
               >
                 view all products
               </Typography>
-             <Box sx={{ width: 1, height: 1, backgroundColor: "E1E1E1" }}></Box>
+             <Box sx={{ width: 1, height: 1, backgroundColor: "E1E1E1" }}/>
             </Stack>
         </Stack>
         <Swiper 
