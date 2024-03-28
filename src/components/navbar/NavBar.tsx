@@ -1,18 +1,19 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Container, Link, Stack, Typography } from "@mui/material";
 import logo from "../../assets/images/Logo.png";
 import search from "../../assets/images/search.png";
 import profile from "../../assets/images/profile.png";
 import cart from "../../assets/images/cart.png";
 import { Menu } from "@mui/icons-material";
+import { Link as LinkRouter } from "react-router-dom";
 
 
 const NavBar = () => {
   const navLinks = [
-    { title: "Home", path: "/", active: true },
-    { title: "Products", path: "/", active: false },
-    { title: "About", path: "/", active: false },
-    { title: "Blog", path: "/", active: false },
-    { title: "Contact", path: "/", active: false },
+    { title: "Home", path: "/", active: false },
+    { title: "Products", path: "/products", active: false },
+    { title: "About", path: "/about", active: false },
+    { title: "Blog", path: "/blog", active: false },
+    { title: "Contact", path: "/contact", active: false },
   ];
 
   return (
@@ -46,14 +47,14 @@ const NavBar = () => {
                 sx={{
                   textTransform: "uppercase",
                   cursor: "pointer",
-                  "&:hover": {color: "#0b99ff"},
+                  "&:hover": {color: "#72aec8"},
                   fontWeight: 400,
                   fontSize: 15,
                   color: link.active ? "primary.main" : "secondary.main",
                   zIndex: 10,
                 }}
               >
-                {link.title}
+                {<Link component={LinkRouter} underline="none" color="inherit" to={link.path}>{link.title}</Link>}
               </Typography>
             ))}
           </Stack>

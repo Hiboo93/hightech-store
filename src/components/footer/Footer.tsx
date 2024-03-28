@@ -1,5 +1,6 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Container, Link, Stack, Typography } from "@mui/material";
 import logo from "../../assets/images/Logo.png";
+import { Link as LinkRouter } from "react-router-dom";
 import {
   GitHub,
   Instagram,
@@ -10,11 +11,11 @@ import {
 
 const Footer = () => {
   const QuickLinks = [
-    { title: "Home" },
-    { title: "About" },
-    { title: "Shop" },
-    { title: "Blogs" },
-    { title: "Contact" },
+    { title: "Home", path: "/" },
+    { title: "About", path: "/about" },
+    { title: "Shop", path: "/shop" },
+    { title: "Blog", path: "/blog" },
+    { title: "Contact", path: "/contact" },
   ];
 
   const HelpLinks = [
@@ -115,7 +116,7 @@ const Footer = () => {
                   "&:hover": { color: "#72aec8" }
                 }}
               >
-                {link.title}
+                {<Link component={LinkRouter} underline="none" color="inherit" to={link.path}>{link.title}</Link>}
               </Typography>
             ))
           }
