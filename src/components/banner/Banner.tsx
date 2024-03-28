@@ -2,7 +2,11 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import ActionButton from "../actionButton/ActionButton.tsx";
 import banner from "../../assets/images/banner.png";
 
-const Banner = () => {
+type Props = {
+  title: string;
+}
+
+const Banner = ({ title }: Props) => {
   return (
     <Box
       sx={{
@@ -52,7 +56,7 @@ const Banner = () => {
                 textTransform: "uppercase",
               }}
             >
-              New Year sale
+              {title}
             </Typography>
             <ActionButton content="Start Shopping" />
           </Stack>
