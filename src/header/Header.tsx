@@ -13,11 +13,8 @@ const Header = () => {
         alignItems: "center",
       }}
     >
-      <Container
-        maxWidth="lg"
-        sx={{ padding: { lg: "0px !important" } }}
-      >
-        <Stack 
+      <Container maxWidth="lg" sx={{ padding: { lg: "0px !important" } }}>
+        <Stack
           direction="row"
           alignItems="center"
           justifyContent="space-between"
@@ -28,21 +25,25 @@ const Header = () => {
             spacing={2.5}
             sx={{ textAlign: { md: "unset", xs: "center" } }}
           >
-              <Typography
-                sx={{
-                  fontWeight: 300,
-                  fontSize: { lg: "80px", xs: "70px" },
-                  color: "secondary.main",
-                  textTransform: "uppercase",
-                }}
-              >
-                Our Products
-                <br /> are great
-              </Typography>
-              <ActionButton content="Start Shopping" />
+            <Typography
+              sx={{
+                fontWeight: 300,
+                fontSize: { lg: "80px", xs: "70px" },
+                color: "secondary.main",
+                textTransform: "uppercase",
+              }}
+            >
+              Our Products
+              <br /> are great
+            </Typography>
+            <ActionButton content="Start Shopping" />
           </Stack>
           <Box sx={{ width: 1, display: { md: "contents", xs: "none" } }}>
-            <img src={watch} alt="watch" style={{ width: "44.5%", zIndex: 0 }} />
+            <img
+              src={watch}
+              alt="watch"
+              style={{ width: "44.5%", zIndex: 0 }}
+            />
           </Box>
         </Stack>
       </Container>
