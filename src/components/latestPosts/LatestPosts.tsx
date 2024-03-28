@@ -37,32 +37,41 @@ const LatestPosts = ({ title, posts }: Props) => {
           >
             READ MORE
           </Typography>
-          <Box sx={{ width: 1, height: 3, backgroundColor: "#E1E1E1"}} />
+          <Box sx={{ width: 1, height: 3, backgroundColor: "#E1E1E1" }} />
         </Stack>
       </Stack>
-      <Stack 
-        direction={{ lg: "row", xs: "column"}} 
-        alignItems="center" 
-        justifyContent="space-between" 
-        spacing={2} sx={{ width: 1, }}
+      <Stack
+        direction={{ lg: "row", xs: "column" }}
+        alignItems="center"
+        justifyContent="space-between"
+        spacing={2}
+        sx={{ width: 1 }}
       >
         {posts.map((post: PostT, index: number) => (
-          <Stack 
-            key={index} 
-            direction="column" 
-            spacing={1} sx={{ cursor: "pointer" }}
+          <Stack
+            key={index}
+            direction="column"
+            spacing={1}
+            sx={{ cursor: "pointer" }}
           >
-            <img 
-              src={post.image} 
-              alt={post.title} 
-              style={{ width: "100%" }}
-            />
-            <Typography sx={{ color: "#848484", fontWeight: 400, fontSize: 13, textTransform: "uppercase"}}
+            <img src={post.image} alt={post.title} style={{ width: "100%" }} />
+            <Typography
+              sx={{
+                color: "#848484",
+                fontWeight: 400,
+                fontSize: 13,
+                textTransform: "uppercase",
+              }}
             >
               {post.date} - {post.category}
             </Typography>
-            <Typography 
-              sx={{ color: "#272727", fontWeight: 400, fontSize: 20, textTransform: "uppercase"}}
+            <Typography
+              sx={{
+                color: "#272727",
+                fontWeight: 400,
+                fontSize: 20,
+                textTransform: "uppercase",
+              }}
             >
               {post.title}
             </Typography>
