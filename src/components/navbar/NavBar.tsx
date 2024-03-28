@@ -5,6 +5,7 @@ import profile from "../../assets/images/profile.png";
 import cart from "../../assets/images/cart.png";
 import { Menu } from "@mui/icons-material";
 
+
 const NavBar = () => {
   const navLinks = [
     { title: "Home", path: "/", active: true },
@@ -13,6 +14,7 @@ const NavBar = () => {
     { title: "Blog", path: "/", active: false },
     { title: "Contact", path: "/", active: false },
   ];
+
   return (
     <Stack
       alignItems={"center"}
@@ -44,6 +46,7 @@ const NavBar = () => {
                 sx={{
                   textTransform: "uppercase",
                   cursor: "pointer",
+                  "&:hover": {color: "#0b99ff"},
                   fontWeight: 400,
                   fontSize: 15,
                   color: link.active ? "primary.main" : "secondary.main",

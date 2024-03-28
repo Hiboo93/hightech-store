@@ -1,6 +1,7 @@
 import Banner from "./components/banner/Banner.tsx";
 import CommentsSlider from "./components/commentsSlider/CommentsSlider.tsx";
 import Features from "./components/features/Features.tsx";
+import Footer from "./components/footer/Footer.tsx";
 import Instagram from "./components/instagram/Instagram.tsx";
 import LatestPosts from "./components/latestPosts/LatestPosts.tsx";
 import NavBar from "./components/navbar/NavBar.tsx";
@@ -22,6 +23,7 @@ function App() {
       <CommentsSlider delay={5000} comments={comments} />
       <Subscribe />
       <Instagram images={instaPosts}/>
+      <Footer />
     </>
   );
 }
